@@ -136,26 +136,29 @@ def zone_conv(zone):
 booster = xgb.XGBRegressor()
 booster.load_model('xgboost_model.json')
 
-data = np.array([
-    area_conv(area),
-    int_area,
-    dist_to_main_road,
-    n_bedroom,
-    n_bathroom,
-    n_room,
-    sale_conv(sale_cond),
-    park_conv(park_facil),
-    build_conv(build_type),
-    util_conv(util_avail),
-    street_conv(street),
-    zone_conv(mzzone),
-    q_rooms,
-    q_bath,
-    q_bed,
-    q_overall,
-    prop_age
-]).reshape(1, -1)
-print(data.shape)
-value = 0
-value = booster.predict(data)
-st.write(f"## Value Estimation: :red[Rs. {int(value)}]")
+if all([area, int_area, prop_age, dist_to_main_road, n_bedroom, n_bathroom, n_room]):
+    data = np.array([
+        area_conv(area),
+        int_area,
+        dist_to_main_road,
+        n_bedroom,
+        n_bathroom,
+        n_room,
+        sale_conv(sale_cond),
+        park_conv(park_facil),
+        build_conv(build_type),
+        util_conv(util_avail),
+        street_conv(street),
+        zone_conv(mzzone),
+        q_rooms,
+        q_bath,
+        q_bed,
+        q_overall,
+        prop_age
+    ]).reshape(1, -1)
+    
+    # Make prediction
+    value = booster.predict(data)
+    st.write(f"## Value Estimation: :red[Rs. {int(value)}]")
+else:
+    st.write(f"## Value Estimation: :red[Rs. 0]")

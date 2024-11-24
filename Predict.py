@@ -156,5 +156,6 @@ data = np.array([
     prop_age
 ]).reshape(1, -1)
 print(data.shape)
+value = 0
 value = booster.predict(data)
 st.write(f"## Value Estimation: :red[Rs. {int(value)}]")

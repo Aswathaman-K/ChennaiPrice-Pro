@@ -7,6 +7,7 @@ st.title("Exploratory Data Analysis")
 st.header("Data used for Training", divider=True)
 DataFrame = pd.read_csv(r"df_clean.csv", index_col=0)
 st.dataframe(DataFrame)
+st.caption("Categorical Data Has Been Label Encoded for Modelling")
 
 st.header("Distribution Of Properties", divider=True)
 left, right = st.columns(2)

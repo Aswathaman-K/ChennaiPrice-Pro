@@ -2,7 +2,7 @@ import streamlit as st
 import xgboost as xgb
 import numpy as np
 
-st.set_page_config(page_title="ChennaiPrice Pro", initial_sidebar_state='collapsed')
+st.set_page_config(page_title="ChennaiPrice Pro", initial_sidebar_state='collapsed', page_icon='🏠')
 st.title('Estimate your House Price')
 st.caption('Enter the specifications and watch the estimation happen in real-time.')
 area = st.selectbox(

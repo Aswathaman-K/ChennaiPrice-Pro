@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="ChennaiPrice Pro", layout='wide')
+st.set_page_config(page_title="ChennaiPrice Pro", layout='wide', initial_sidebar_state='collapsed')
 st.title("Exploratory Data Analysis")
 
 st.header("Data used for Training", divider=True)

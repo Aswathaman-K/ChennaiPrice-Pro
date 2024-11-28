@@ -24,11 +24,11 @@ st.image("static/segment_share.png", caption='Distribution of Categorical Data',
 st.header("How Geographical Area Affects Price", divider=True)
 left, right = st.columns(2)
 with left:
-    st.image('static\\area_vs_price.png', caption='Price of Properties, by Geographic Area & Building Type')
+    st.image('static/area_vs_price.png', caption='Price of Properties, by Geographic Area & Building Type')
 with right:
-    st.image('static\\area_vs_price_2.png', caption='Price of Properties, by Geographic Area & Sale Type')
+    st.image('static/area_vs_price_2.png', caption='Price of Properties, by Geographic Area & Sale Type')
     
-st.image('static\\age_vs_price.png', caption='Average Price of Properties vs Property Age')
+st.image('static/age_vs_price.png', caption='Average Price of Properties vs Property Age')
 
 one, two, three, four, five = st.columns(5)
 with five:
@@ -37,11 +37,9 @@ with five:
 st.sidebar.title("About the Creator")
 st.sidebar.info(
         """
-        **Developed by [Your Name]**  
+        **Developed by Aswathaman K**  
         Reach out to me:
-        - 📧 [Email](mailto:your_email@example.com)
-        - 🐦 [Twitter](https://twitter.com/your_handle)
-        - 💼 [LinkedIn](https://linkedin.com/in/your_profile)
-        - 📂 [GitHub](https://github.com/your_username)
+        - 💼 [LinkedIn](https://www.linkedin.com/in/aswathaman-kumaran-2128b028a)
+        - 📂 [GitHub](https://github.com/Aswathaman-K)
         """)
 st.sidebar.markdown("---")  # Separato

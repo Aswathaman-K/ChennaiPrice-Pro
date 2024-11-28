@@ -28,6 +28,7 @@ Property pricing is a critical aspect of real estate. Accurate predictions empow
 This application utilizes advanced machine learning algorithm to predict property prices in Chennai based on various features, ensuring accuracy and efficiency.
 """)
 
+st.write("")
 st.subheader("Try Now!")  
 left, right = st.columns(2)
 with left:

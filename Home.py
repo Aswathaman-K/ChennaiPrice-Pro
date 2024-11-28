@@ -1,6 +1,17 @@
 import streamlit as st
 
 st.set_page_config(page_title="ChennaiPrice Pro", initial_sidebar_state='collapsed')
+st.sidebar.write("")
+st.sidebar.markdown("---")
+st.sidebar.title("About the Creator")
+st.sidebar.info(
+        """
+        **Developed by Aswathaman K**  
+        Reach out to me:
+        - 💼 [LinkedIn](https://www.linkedin.com/in/aswathaman-kumaran-2128b028a)
+        - 📂 [GitHub](https://github.com/Aswathaman-K)
+        """)
+st.sidebar.markdown("---")
 
 st.title("ChennaiPrice :red[Pro]")
 st.header("About")

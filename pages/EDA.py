@@ -36,7 +36,6 @@ with five:
         st.switch_page('Home.py')
 
 st.sidebar.write("")
-st.sidebar.markdown("---")
 st.sidebar.title("About the Creator")
 st.sidebar.info(
         """

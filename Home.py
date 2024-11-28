@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="ChennaiPrice Pro")
+st.set_page_config(page_title="ChennaiPrice Pro", initial_sidebar_state='collapsed')
 
 st.title("ChennaiPrice :red[Pro]")
 st.header("About")

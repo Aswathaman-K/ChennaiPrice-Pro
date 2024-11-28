@@ -34,6 +34,9 @@ one, two, three, four, five = st.columns(5)
 with five:
     if st.button("Back Home", type='primary'):
         st.switch_page('Home.py')
+
+st.sidebar.write("")
+st.sidebar.markdown("---")
 st.sidebar.title("About the Creator")
 st.sidebar.info(
         """
@@ -42,4 +45,4 @@ st.sidebar.info(
         - 💼 [LinkedIn](https://www.linkedin.com/in/aswathaman-kumaran-2128b028a)
         - 📂 [GitHub](https://github.com/Aswathaman-K)
         """)
-st.sidebar.markdown("---")  # Separato
+st.sidebar.markdown("---")
